@@ -1,3 +1,14 @@
+<script>
+export default {
+  name: "AppFooter",
+  data() {
+    return {
+      currentDate: new Date()
+    }
+  }
+}
+</script>
+
 <template>
   <footer class="bg-primary-colour border-primary-colour-mute border-t-2">
     <div class="mt-14 flex flex-col items-center text-center">
@@ -26,14 +37,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  name: "AppFooter",
-  data() {
-    return {
-      currentDate: new Date()
-    }
-  }
-}
-</script>
