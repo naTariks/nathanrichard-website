@@ -1,18 +1,30 @@
 <template>
-  <div class="border-t">
-    <div class="container">
-      <footer class="py-3 my-4">
-        <div class="nav justify-content-center border-b pb-3 mb-3">
-          <RouterLink to="/" class="nav-link px-2 text-muted">Home</RouterLink>
-          <a href="https://www.linkedin.com/in/natariks" target="_blank" class="nav-link px-2 text-muted"><i class="bi bi-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/naTariks" target="_blank" class="nav-link px-2 text-muted"><i class="bi bi-github"></i> Github</a>
-          <a href="impressum.html" class="nav-link px-2 text-muted">Impressum</a>
-          <RouterLink to="/imprint" class="nav-link px-2 text-muted">Imprint</RouterLink>
-        </div>
-        <p class="text-center text-muted">© {{ currentDate.getFullYear() }} Nathan Richard</p>
-      </footer>
+  <footer class="bg-primary-colour border-primary-colour-mute border-t-2">
+    <div class="mt-14 flex flex-col items-center text-center">
+      <a href="#" class="my-4">
+        <img alt="NR Logo. It consists of the two letters N and R written together in purple." class="w-auto h-9" src="src/assets/logo_bold.svg">
+      </a>
+
+      <div class="my-4">
+        <a class="mx-2.5 text-sm text-opposite-colour-mute transition-colors duration-500 hover:text-secondary-colour uppercase font-semibold font-heading" href="#">Imprint</a>
+        <a class="mx-2.5 text-sm text-opposite-colour-mute transition-colors duration-500 hover:text-secondary-colour uppercase font-semibold font-heading" href="#">Ascii (Coming Soon)</a>
+      </div>
+
+      <div class="my-4">
+        <a class="mx-2 text-opposite-colour-mute transition-colors duration-500 hover:text-secondary-colour" href="https://www.linkedin.com/in/natariks" target="_blank">
+          <fa icon="fa-brands fa-linkedin" size="xl"/>
+        </a>
+        <a class="mx-2 text-opposite-colour-mute transition-colors duration-500 hover:text-secondary-colour" href="https://github.com/naTariks" target="_blank">
+          <fa icon="fa-brands fa-github" size="xl"/>
+        </a>
+        <a class="mx-2 text-opposite-colour-mute transition-colors duration-500 hover:text-secondary-colour" href="mailto:contact@nathanrichard.dev" target="_blank">
+          <fa icon="fa-solid fa-envelope" size="xl"/>
+        </a>
+      </div>
+
+      <p class="text-sm text-[#ffffff4d] my-10 font-semibold">© {{ currentDate.getFullYear() }} Nathan Richard <fa icon="fa-solid fa-grip-lines-vertical"/> This site is made with <fa class="text-secondary-colour" icon="fa-solid fa-heart"/></p>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -25,13 +37,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.border-t {
-  border-top: 3px solid var(--color-border)
-}
-
-.border-b {
-  border-bottom: 3px solid var(--color-border)
-}
-</style>
