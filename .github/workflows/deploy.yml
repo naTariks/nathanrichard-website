@@ -1,0 +1,28 @@
+name: Deploy to Raspberry Pi
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "18.x"
+    - name: "Install & build"
+      run: |
+        npm i
+        npm run build 
+    - name: "push to server"
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "public/"
+        strip_components: 1
+        target: "/var/www/test"
