@@ -33,7 +33,7 @@ export default {
         </a>
       </div>
 
-      <p class="text-sm text-[#ffffff4d] my-10 font-semibold">© {{ currentDate.getFullYear() }} Nathan Richard <fa icon="fa-solid fa-grip-lines-vertical"/> This site is made with <fa class="text-secondary-colour" icon="fa-solid fa-heart"/></p>
+      <p class="text-sm text-[#ffffff4d] my-10 font-semibold">© {{ currentDate.getFullYear() }} Nathan Richard <fa icon="fa-solid fa-grip-lines-vertical"/> This site is made with much<fa class="text-secondary-colour" icon="fa-solid fa-heart"/></p>
     </div>
   </footer>
 </template>
