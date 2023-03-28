@@ -17,7 +17,7 @@ jobs:
           node-version: 18.x
       - name: Install & Build App
         run: |
-          npm i
+          npm install --legacy-peer-deps --force
           npm run build 
       - name: deploy on raspberry pi
         uses: appleboy/scp-action@master
