@@ -29,4 +29,12 @@ jobs:
           source: "dist/"
           strip_components: 1
           rm: true
-          target: "/var/www/test2"
+          target: "/var/www/vue-nathanrichard-dev"
+      - name: Set proper rights
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: www-rights
