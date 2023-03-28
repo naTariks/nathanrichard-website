@@ -30,6 +30,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "public/"
+          source: "dist/"
           strip_components: 1
-          target: "/var/www/test"
+          target: "/var/www/test2"
