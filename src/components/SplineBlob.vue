@@ -1,6 +1,6 @@
-<script>
+<script lang="js">
 import { defineComponent } from 'vue';
-import Spline from "spline-vue/v3";
+import Spline from 'spline-vue/v3';
 export default defineComponent({
   name: "SplineBlob",
   components: {

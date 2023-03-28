@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 export default {
   name: "AppFooter",
   data() {
@@ -13,7 +13,7 @@ export default {
   <footer class="bg-primary-colour border-primary-colour-mute border-t-2">
     <div class="mt-14 flex flex-col items-center text-center">
       <a href="#" class="my-4">
-        <img alt="NR Logo. It consists of the two letters N and R written together in purple." class="w-auto h-9" src="src/assets/logo_bold.svg">
+        <img alt="NR Logo. It consists of the two letters N and R written together in purple." class="w-auto h-9" src="@/assets/logo_bold.svg">
       </a>
 
       <div class="my-4">
