@@ -28,7 +28,7 @@ html {
 }
 
 *::-webkit-scrollbar {
-  width: 13px
+  width: 8px
 }
 
 *::-webkit-scrollbar-track {
@@ -37,8 +37,6 @@ html {
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--secondary-colour);
-  border-radius: 20px;
-  border: 3px solid var(--primary-colour-mute)
 }
 
 body {
