@@ -1,3 +1,5 @@
+![Website](https://img.shields.io/website?down_color=critical&down_message=down&up_color=success&up_message=up&url=https%3A%2F%2Fnathanrichard.dev)
+
 # nathanrichard
 
 This template should help get you started developing with Vue 3 in Vite.
